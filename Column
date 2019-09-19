@@ -1,0 +1,13 @@
+file = open("input.txt", 'r')
+lines = file.readlines()
+file.close()
+
+
+
+for line in lines:
+    parts = line.split() # split line into parts
+    if len(parts) > 1:
+        column2 = parts[1]
+        columnLength = len(column2)
+        desireValue = column2[columnLength-3]
+        print desireValue
